@@ -1,0 +1,18 @@
+There are several types of programming that C++ supports:
+
+1. procedureal programming
+2. oop
+3. generic programming
+4. functional programming
+
+
+Lets talk about theory of generic programming !
+
+- Compiler will create as many different functions as number of different datatype accessing the same function.
+- Placeholders can be used to replace any generic data type during compile time.
+
+
+References to generic programming:
+1. https://www.geeksforgeeks.org/generics-in-c/
+2. https://www.scaler.com/topics/cpp/generic-programming-in-cpp/
+3. https://stackoverflow.com/questions/3862378/what-is-the-meaning-of-generic-programming-in-c
