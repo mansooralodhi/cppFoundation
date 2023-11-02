@@ -1,0 +1,15 @@
+-   The C++ language is a "case sensitive" language. 
+
+-   Note in the panel above that other than char (which has a size of exactly one byte), 
+    none of the fundamental types has a standard size specified (but a minimum size, at most)
+
+-   Variable initialization:
+    c-like initialization: 
+        type identifier = inital_value;
+        int x = 0;
+    constructor_initialization: 
+        type identifier (initial_value);
+        int x (0);
+    uniform initialization: 
+        type identifier {initial_value};
+        int x {0};

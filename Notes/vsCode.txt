@@ -1,0 +1,18 @@
+Reference:
+https://www.youtube.com/watch?v=dSGW-DLMnUc
+
+
+Notes
+-----
+
+Q. Difference between Intellisence & Intellicode ?
+Ans. Intellicode is an AI based Intellisence.
+
+Q. Does C++ uses Intellicode or Intellisence ?
+Ans. C++ uses Intellisence.
+
+Q. Why VS code comes with very generic configuration ?
+Ans. So that user can configure it with respect to platform and language. (for example
+user may want to test the code with two different compilers)
+
+

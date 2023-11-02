@@ -1,0 +1,25 @@
+
+++var --> this output the incremented value of variable, var.
+var++ --> this outputs the non-incremented value of variable but increments the var value.
+
+/ --> the dataype of output of the division depends on:
+        1. first the datatypes of operands (integer division, mixed-mode division, floating-point division)
+        2. second the dataype of outptu storage variable (in case the datatype is int while the output is float than int would be stored.)
+
+    a solution to the above problem is typecasting:
+    float result = static_cast<float>(numerator) / denominator; // this statement makes at least one number float so that the result is float
+
+
++ --> 
+
+
+/*
+    int age = ;
+    we may declare integer variable with:
+    1. float: in this case only the whole number will be stored in the variable.
+    2. decimal: only the whole number will be stored.
+    3. char: the ASCII value of the char will be stored. 
+    ...
+    Same goes with char, float, and other datatypes.
+    Conclusion: the compiler doesn't usually breaks or give error. Its user responsibility to make sure the variable has correct value dataytpe.
+*/

@@ -1,0 +1,21 @@
+
+# include --> Preprocessor directive
+
+the above preprocessor runs before the compilation process and allows to include the header or library files with built in or predefined 
+features or operations.
+
+<iostream> --> Header File: iostream, allows to use some built in commands such as cout, cin, etc. Note this is not extension.
+
+namespace std --> Here all the library feature/functions are place in the name of std.  further details later ...
+
+int main(){} --> starting point of program/file. Note you need not to call the main function itself. 
+
+int x --> a variable, x, is nothing but a name for a memory location.
+
+dataypes --> the reason we define datatypes is to reduce the memory required at compile time. If we don't expect, and we usually don't expect 
+            very large/small numbers in programs, than its better to use less memory consumed datatypes such as int. This not only reduces the
+            compile time of the program but only the execution time. Note, dataypes are represented by keywords in program. e.g. integer has keyword int. 
+
+keyword --> nothing but a representation of some dataype or functionality. e.g. for, while, int, float, etc.
+
+type modifier --> short int, long int -- the 'short' and 'long' here are called type modifer.
