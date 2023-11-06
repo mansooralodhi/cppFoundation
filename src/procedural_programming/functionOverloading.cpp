@@ -7,7 +7,8 @@ Functions can only be overloaded based on their
 signatures which involves their 
 - no of parameters
 - datatype of parameters 
-- return type
+
+Signature does not involve return type.
 */
 
 // overloading based on no. of arguments
@@ -18,10 +19,13 @@ string nameConcatenate(string a, string b);
 void personTaxInfo(string name, int tax);
 void personTaxInfo(int tax, string name);
 
-// overloading based on return type
-int getMax(int x, int y);
-float getMax(int x, float y);
-float getMax(float x, float y);
+/*  
+not possible overloading based on return type 
+uncomment all below file comments to observe.
+*/
+
+// int getMax(float x, float y);
+// float getMax(float x, float y);
 
 
 int main(){
@@ -36,26 +40,19 @@ int main(){
     personTaxInfo(fullName, tax);
     personTaxInfo(tax, fullName);
 
-    int a=7, b=2;
-    float c=9.9, d=5.8;
-    cout << "Maximum : " << getMax(a, b) << endl;
-    cout << "Maximum : " << getMax(c, d) << endl;
-    cout << "Maximum : " << getMax(a, c) << endl;
+    // float c=9.9, d=5.8;
+    // cout << "Maximum : " << getMax(c, d) << endl;
 
     return 0;
 }
 
-int getMax(int x, int y){
-    return (x>y) ? x : y;
-}
+// int getMax(float x, float y){
+//     return (x>y) ? x : y;
+// }
 
-float getMax(float x, float y){
-    return (x>y) ? x : y;
-}
-
-float getMax(int x, float y){
-    return (x>y) ? x : y;
-}
+// float getMax(float x, float y){
+//     return (x>y) ? x : y;
+// }
 
 void personTaxInfo(int tax, string name){
     cout << name  + " payed tax " << tax << endl;
