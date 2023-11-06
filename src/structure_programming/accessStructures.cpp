@@ -14,17 +14,17 @@ void display(Person *);
 
 int main(){
 
-    Person burhan = {"burhan", 30, 2004};   // method of declaring and initializing dataype Person(struct) with local scope
+    Person burhan = {"bur", 30, 2000};   // method of declaring and initializing dataype Person(struct) with local scope
     
     Person fareeha;                         // method of declaring datatype Person(struct) with local scope
-    fareeha.name = "fareeha";
+    fareeha.name = "far";
     fareeha.height = 5;
-    fareeha.yearOfBirth = 2002;
+    fareeha.yearOfBirth = 1800;
     
     Person *fatimaPtr;                      // method of declaring a pointer of datatype Person(struct) 
     fatimaPtr = &fatima;
-    fatimaPtr->name = "fatima";             // method of initializing the pointer of datatype Person(struct)
-    fatimaPtr->yearOfBirth = 1994;
+    fatimaPtr->name = "fat";             // method of initializing the pointer of datatype Person(struct)
+    fatimaPtr->yearOfBirth = 1900;
 
     display(fatimaPtr);                     // calling the pointer function
     display(fatima);                        
@@ -51,6 +51,6 @@ void display(Person *person){
     cout << "Height: " << person->height << endl;
     cout << "Birth: " << person->yearOfBirth << endl << endl;
 
-    person.yearOfBirth = 0000;              // note: this change will be reflected outside the function, whoever
+    person->yearOfBirth = 0000;              // note: this change will be reflected outside the function, whoever
                                             // is calling this function.
 }

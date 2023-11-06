@@ -5,58 +5,71 @@ using namespace std;
 /* 
 Functions can only be overloaded based on their 
 signatures which involves their 
-- name
 - no of parameters
 - datatype of parameters 
-Signature does not include return type. 
+- return type
 */
 
 // overloading based on no. of arguments
+string nameConcatenate(string a);
 string nameConcatenate(string a, string b);
-string nameConcatenate(string a, string b, string c);
 
 // overloading based on datatye of arguments
 void personTaxInfo(string name, int tax);
 void personTaxInfo(int tax, string name);
 
-// Note: what is NOT possible is:
-// string nameConcatenate(string a, string b);
-// void nameConcatenate(string a, string b, string c);
+// overloading based on return type
+int getMax(int x, int y);
+float getMax(int x, float y);
+float getMax(float x, float y);
 
 
 int main(){
 
     int tax = 2500;
-    string fullName, firstName = "Micheal", middleName="Don", lastName="Chorleone";
+    string fullName, firstName = "Micheal", lastName="Chorleone";
     
-    fullName = nameConcatenate(firstName,  lastName);
+    fullName = nameConcatenate(firstName);
+    fullName = nameConcatenate(firstName);
+    fullName = nameConcatenate(firstName, lastName);    
+    
     personTaxInfo(fullName, tax);
-
-    fullName = nameConcatenate(firstName,  middleName, lastName);    
     personTaxInfo(tax, fullName);
+
+    int a=7, b=2;
+    float c=9.9, d=5.8;
+    cout << "Maximum : " << getMax(a, b) << endl;
+    cout << "Maximum : " << getMax(c, d) << endl;
+    cout << "Maximum : " << getMax(a, c) << endl;
 
     return 0;
 }
 
+int getMax(int x, int y){
+    return (x>y) ? x : y;
+}
+
+float getMax(float x, float y){
+    return (x>y) ? x : y;
+}
+
+float getMax(int x, float y){
+    return (x>y) ? x : y;
+}
 
 void personTaxInfo(int tax, string name){
     cout << name  + " payed tax " << tax << endl;
 }
 
-
 void personTaxInfo(string name, int tax){
     cout << name  + " payed tax " << tax << endl;
 }
 
-void personTaxInfo(string name, int age, int tax){
-    cout << name  << " aged "<< age << " payed tax " << tax << endl;
+string nameConcatenate(string a){
+    return a;
 }
 
 string nameConcatenate(string a, string b){
     return a + " " + b;
-}
-
-string nameConcatenate(string a, string b, string c){
-    return a + " " + b + " " + c;
 }
 
