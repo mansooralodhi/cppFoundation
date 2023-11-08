@@ -5,6 +5,9 @@ using namespace std;
 Take Aways:
 - classes do have default destructor.
 - deleting an object does delete its attributes and properties.
+- one cannot delete an object that was not allocated with new keyword.
+- objects created without new have their default destructor called when
+    their scope ends.
 Questions:
 - why cannot we perform the below task in private but only in constructor
     name = new string; 
