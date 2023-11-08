@@ -1,0 +1,35 @@
+In C++, you can create an object of a class by declaring an instance of the 
+class. For example, if you have a class named `Example`, you can create an 
+object of that class like this: `Example example;`². 
+
+You can also create an object dynamically using the `new` operator. For 
+example, if you have a class named `Example`, you can create an object 
+of that class dynamically like this: `Example* example = new Example();`². 
+
+When you create an object with automatic storage duration, like `Example 
+example;`, the object will be automatically destroyed when it goes out of 
+scope. On the other hand, when you create an object dynamically using the 
+`new` operator, like `Example* example = new Example();`, you are creating 
+an object dynamically and you are binding its address to a pointer. This 
+way, the object you created will not be destroyed when your pointer goes 
+out of scope. In Modern C++, this is regarded as a dubious programming 
+practice: although pointers are important because they allow realizing 
+reference semantics, raw pointers are bad because they could result in 
+memory leaks (objects outliving all of their pointers and never getting 
+destroyed) or in dangling pointers (pointers outliving the object they point 
+to, potentially causing Undefined Behavior when dereferenced). In fact, 
+when creating an object with `new`, you always have to remember destroying
+it with `delete`: `delete example;`². 
+
+In C++, you can pass an object by reference using the `&` symbol. 
+For example, if you have a class named `Example`, you can pass an object 
+of that class by reference like this: `void someFunction(Example& example) 
+{ ... }`¹. 
+
+I hope this helps!
+
+Source: Conversation with Bing, 07/11/2023
+(1) How do I create a class object in C++? - Stack Overflow. https://stackoverflow.com/questions/15310846/how-do-i-create-a-class-object-in-c.
+(2) class - passing object by reference in C++ - Stack Overflow. https://stackoverflow.com/questions/18147038/passing-object-by-reference-in-c.
+(3) References in C++ - GeeksforGeeks. https://www.geeksforgeeks.org/references-in-cpp/.
+(4) github.com. https://github.com/nirmal499/trying-new-stuff/tree/c0cd8914f0824ac0971e4ebae9ec3c83ad03694f/cplusW%2Fmod6%2Frpg.cpp.
