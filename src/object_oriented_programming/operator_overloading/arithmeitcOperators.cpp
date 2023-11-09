@@ -22,7 +22,7 @@ class CourseMarks{
         }
         void displayMarks(){
             cout << "Sessional Marks: "<< sessionalMarks << 
-            "Semester Marks: " << semesterMarks << endl;
+            ", Semester Marks: " << semesterMarks << endl;
         }
         void operator+= (int marks){ semesterMarks += marks;}
         void operator-= (int marks){ semesterMarks -= marks;}
@@ -53,18 +53,19 @@ int main(){
     CourseMarks myMarks(1000, 1000);
     ++myMarks;
     myMarks.displayMarks(); 
+    --myMarks;
+    myMarks.displayMarks(); 
 
     return 0;
 }
 
 CourseMarks CourseMarks::operator- (CourseMarks marks){
     CourseMarks m;
-    cout << " " << m.sessionalMarks << endl;
     m.sessionalMarks = marks.sessionalMarks - sessionalMarks; 
     m.semesterMarks = marks.semesterMarks - semesterMarks;
     return m; 
 }
-CourseMarks operator+ (CourseMarks marks){
+CourseMarks CourseMarks::operator+ (CourseMarks marks){
     CourseMarks m;
     m.sessionalMarks = marks.sessionalMarks + sessionalMarks; 
     m.semesterMarks = marks.semesterMarks + semesterMarks;
