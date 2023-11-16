@@ -1,6 +1,10 @@
 #include<iostream>
-
 using namespace std;
+
+/*
+structure memeber and attributes are by default public
+*/
+
 
                                             // below we create a datatype called Person:
 struct Person{

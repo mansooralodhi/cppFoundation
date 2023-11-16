@@ -3,7 +3,7 @@ using namespace std;
 
 struct company{
     string name;
-    string headquarters;
+    string headquarters; 
 };
 
 struct employee{
@@ -11,7 +11,6 @@ struct employee{
     int taxNumber;
     company Employer;
 };
-
 
 int main(){
     employee Mansoor {"Mansoor", 05214, "KPMG", "London"};
