@@ -1,16 +1,30 @@
 ### **Objective**:
 Build a strong base for future projects in Cpp.
 
-<details>	
+<details close>	
   <summary> Topics </summary>
   
-  - Functional Programming
-     - Function Decorators
-     - Class Decorators
-     - Stacked Decorators
-     - Wrappers
+  - Procedural Programming
+     - Function Overloading
+     - Pass By Value
+     - Pass Pointers
+     - Pass By Reference
+  - Dynamic Memory Allocation
+     - New & Delete
+     - Dynamic Arrays
+  - Generic Programming
+     - Generic Classes
+     - Generic Functions
+  - Structural Programming
+     - Inheritance
+     - Nested Strcutures
+     - Nested Structures Reference
   - Object Oriented Programming
-     - NamedTuple
-     - Enum
-
+     - Operators
+         -  Delete
+         -  Friend
+         -  Static
+         -  Scope Resolution  
+     - Inheritance
+     - Constructor Overloading
 </details>
