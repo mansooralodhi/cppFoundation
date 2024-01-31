@@ -1,7 +1,7 @@
 ### **Objective**:
 Build a base for Cpp programming by playing around some code snippets.
 
-<details close>	
+<details open>	
   <summary> Topics </summary>
   
   - Procedural Programming
