@@ -1,4 +1,4 @@
-### **Objective**:
+### Objective:
 Build a base for Cpp programming by playing around some code snippets.
 
 <details open>	
