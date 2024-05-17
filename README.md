@@ -27,4 +27,8 @@ Build a base for Cpp programming by playing around some code snippets.
          -  Scope Resolution  
      - Inheritance
      - Constructor Overloading
+  - Standard Template Library
+     - Vectors
+         -  Sorting 
+         -  Deletion
 </details>
