@@ -11,7 +11,8 @@ Build a base for Cpp programming by playing around some code snippets.
      - Pass By Reference
   - Dynamic Memory Allocation
      - New & Delete
-     - Dynamic Arrays
+     - Dynamic Arrays (using pointers)
+     - Nested Dynamic Arrays (using pointers)
   - Generic Programming
      - Generic Classes
      - Generic Functions
